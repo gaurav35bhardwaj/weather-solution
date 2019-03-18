@@ -47,7 +47,7 @@ class Weather extends React.Component {
             isLoading: true,
             isData: false,
         })
-        fetch(`http://api.apixu.com/v1/forecast.json?key=f2fa2fd47c314a129f562342191603&q=${inputLocation}&days=4`)
+        fetch(`https://api.apixu.com/v1/forecast.json?key=f2fa2fd47c314a129f562342191603&q=${inputLocation}&days=4`)
         .then(response => response.json())
         .then((data) => {
             if ('error' in data){
